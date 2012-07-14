@@ -7,8 +7,8 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "msgpack-js": "*",
-    "through": "*"
+    "msgpack-js": "~0.1",
+    "through": "~0.0"
   },
   "keywords": [
     "msgpack",
@@ -17,5 +17,10 @@
     "frame"
   ],
   "author": "Dominic Tarr <dominic.tarr@gmail.com> (dominictarr.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/msgpack-stream.git"
+  }
 }
