@@ -1,0 +1,21 @@
+{
+  "name": "msgpack-stream",
+  "version": "0.0.0",
+  "description": "Stream of msgpack protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "msgpack-js": "*",
+    "through": "*"
+  },
+  "keywords": [
+    "msgpack",
+    "stream",
+    "pipe",
+    "frame"
+  ],
+  "author": "Dominic Tarr <dominic.tarr@gmail.com> (dominictarr.com)",
+  "license": "MIT"
+}
