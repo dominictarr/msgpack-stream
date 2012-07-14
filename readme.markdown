@@ -1,6 +1,6 @@
 #MsgPackStream
 
-Streams of framed [msgpack](http://wiki.msgpack.org/display/MSGPACK/Format+specification) messages.
+Streams of framed [msgpack](http://msgpack.org) messages.
 
 ## usage
 
@@ -27,4 +27,6 @@ this is mostly pulled out of [smith](https://github.com/c9/smith) and slightly r
 
 ## lies
 
-actually, msgpack does not support much loved js objects such as `Infinity`, or `Nan`.
+Actually, msgpack does not support much loved js objects such as `Infinity`, or `Nan`. 
+
+On the other hand, `msgpack-stream` uses [creationix/msgpack-js](https://github.com/creationix/msgpack-js) which implements a slightly extended protocol, so you can pack `Buffer` and `undefined`
