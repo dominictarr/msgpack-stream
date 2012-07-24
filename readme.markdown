@@ -2,6 +2,16 @@
 
 Streams of framed [msgpack](http://msgpack.org) messages.
 
+## WARNING
+
+this module is *not recommended* parsing `msgpack` in js is much slower
+than spliting json into lines and parsing with `JSON.parse`, which is heavily
+optimised in all good js implementations.
+
+instead use: [es.parse](https://github.com/dominictarr/event-stream#parse) and [es.stringify](https://github.com/dominictarr/event-stream#stringify)
+
+If you really want to use `msgpack` you should fix this issue: [pgreiss/node-msgpack#16](https://github.com/pgriess/node-msgpack/issues/16)
+
 ## usage
 
 ``` js
