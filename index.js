@@ -37,7 +37,7 @@ var through = require('through');
 exports.createEncodeStream = 
 function () {
   return through(function (data) {
-    console.log('SEND')
+    // console.log('SEND')
     send(this, data)
   })
 }
@@ -63,7 +63,7 @@ exports.createDecodeStream =
 function  () {
     var stream
     return stream = through(parse = deFramer(function (frame) {
-        console.log(frame)
+        // console.log(frame)
         var message;
         try {
             message = msgpack.decode(frame);
