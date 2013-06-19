@@ -22,6 +22,7 @@ THE SOFTWARE.
 
 var msgpack = require('msgpack-browserify');
 var through = require('through');
+var bops    = require('bops')
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -50,7 +51,7 @@ function send (output, message) {
     var frame = msgpack.encode(message);
 
     // Send a 4 byte length header before the frame.
-    var header = new Buffer(4);
+    var header = bops.create(4);
     header.writeUInt32BE(frame.length, 0);
     output.emit('data', header);
 
