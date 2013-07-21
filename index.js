@@ -52,7 +52,7 @@ function send (output, message) {
 
     // Send a 4 byte length header before the frame.
     var header = bops.create(4);
-    header.writeUInt32BE(frame.length, 0);
+    bops.writeUInt32BE(header, frame.length, 0);
     output.emit('data', header);
 
     // Send the serialized message.
