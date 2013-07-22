@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "through": "2.3.4",
-    "msgpack": "git://github.com/dominictarr/msgpack-js.git",
+    "msgpack-js": "git://github.com/dominictarr/msgpack-js.git",
     "bops": "0.0.6"
   },
   "keywords": [
