@@ -129,11 +129,12 @@ function deFramer(onFrame) {
                 offset += len;
                 i += len - 1;
                 if (emit) {
-                    onFrame(buffer); 
                     state = 0;
                     length = 0;
+                    var _buffer = buffer
                     buffer = undefined;
                     offset = undefined;
+                    onFrame(_buffer);
                 }
                 break;
             }
