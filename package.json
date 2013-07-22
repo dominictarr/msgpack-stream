@@ -1,6 +1,6 @@
 {
   "name": "msgpack-stream",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Stream of msgpack protocol",
   "main": "index.js",
   "scripts": {
