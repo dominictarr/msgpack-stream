@@ -2,6 +2,8 @@
 
 Streams of framed [msgpack](http://msgpack.org) messages.
 
+[![testling badge](https://ci.testling.com/dominictarr/msgpack-stream.png)](https://ci.testling.com/dominictarr/msgpack-stream)
+
 ## WARNING
 
 this module is *not recommended* parsing `msgpack` in js is much slower
