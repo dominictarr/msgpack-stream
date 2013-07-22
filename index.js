@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-var msgpack = require('msgpack-browserify');
+var msgpack = require('msgpack-js');
 var through = require('through');
 var bops    = require('bops')
 
