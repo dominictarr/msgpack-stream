@@ -113,7 +113,7 @@ function deFramer(onFrame) {
             case 1: length |= chunk[i] << 16; state = 2; break;
             case 2: length |= chunk[i] << 8; state = 3; break;
             case 3: length |= chunk[i]; state = 4;
-                buffer = new Buffer(length);
+                buffer = bops.create(length);
                 offset = 0;
                 break;
             case 4:
@@ -125,7 +125,7 @@ function deFramer(onFrame) {
                 }
                 // TODO: optimize for case where a copy isn't needed can a slice can
                 // be used instead?
-                chunk.copy(buffer, offset, i, i + len);
+                bops.copy(chunk, buffer, offset, i, i + len);
                 offset += len;
                 i += len - 1;
                 if (emit) {
