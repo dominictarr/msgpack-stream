@@ -63,7 +63,7 @@ function send (output, message) {
 exports.createDecodeStream = 
 function  () {
     var stream
-    return stream = through(parse = deFramer(function (frame) {
+    return stream = through(deFramer(function (frame) {
         // console.log(frame)
         var message;
         try {
