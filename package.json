@@ -9,7 +9,7 @@
   "dependencies": {
     "through": "2.3.4",
     "msgpack-js": "0.3.0",
-    "bops": "0.0.6"
+    "bops": "1.0.0"
   },
   "keywords": [
     "msgpack",
